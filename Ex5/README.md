@@ -1,0 +1,1 @@
+Cài đặt các thư viện bằng: pip install -r requirements.txt
