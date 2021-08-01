@@ -21,7 +21,7 @@ class Order(Resource):
 						required=True,
 						help="This field cannot be empty")
 	parser.add_argument('order_date',
-						type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
+						type=lambda s: datetime.strptime(s, '%Y-%m-%d').date(),
 						required=True,
 						help="This field cannot be empty")
 	parser.add_argument('shipper_id',
@@ -73,7 +73,7 @@ class Order(Resource):
 		else:
 			return {'message': 'Order ID not found'}, 400
 	
-	def put(self, shipper_name):
+	def put(self):
 		data = Order.parser.parse_args()
 
 		if Order.parser.parse_args()['order_id']:

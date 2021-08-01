@@ -8,7 +8,7 @@ class OrderModel(db.Model):
 	order_id = db.Column(db.Integer, primary_key=True)
 	customer_id = db.Column(db.Integer, db.ForeignKey('customers.customer_id'), nullable=False)
 	employee_id = db.Column(db.Integer, db.ForeignKey('employees.employee_id'), nullable=False)
-	order_date = db.Column(db.DateTime, nullable=False)
+	order_date = db.Column(db.Date, nullable=False)
 	shipper_id = db.Column(db.Integer, db.ForeignKey('shippers.shipper_id'), nullable=False)
 	
 	def __init__(self, customer_id, employee_id, order_date, shipper_id):

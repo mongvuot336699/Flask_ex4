@@ -10,7 +10,7 @@ class Employee(Resource):
 						required=True,
 						help="This field cannot be empty")
 	parser.add_argument('birth_date',
-						type=lambda s: datetime.strptime(s, '%Y-%m-%d'),
+						type=lambda s: datetime.strptime(s, '%Y-%m-%d').date(),
 						required=True,
 						help="This field cannot be empty")
 	parser.add_argument('photo',
@@ -33,6 +33,7 @@ class Employee(Resource):
 			return {'message': 'The Employee with last name {} already exists.'.format(last_name)}, 400
 		
 		data = Employee.parser.parse_args()
+		print(data)
 
 		employee = EmployeeModel(last_name, **data)
 

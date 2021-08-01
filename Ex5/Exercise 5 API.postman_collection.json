@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "c5a4112b-fa07-4bb1-97cc-35a9e5aa9070",
+		"name": "Exercise 5 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer API",
+			"item": [
+				{
+					"name": "/customer/<\"customerName\">",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contact_name\" : \"Ana Trujillo\",\r\n    \"address\" : \"Avda. de la Constitución 2222\",\r\n    \"city\" : \"México D.F.\",\r\n    \"postal_code\" : \"05021\",\r\n    \"country\": \"Mexico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/customer/Ana Trujillo Emparedados y helados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"customer",
+								"Ana Trujillo Emparedados y helados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/customer/<customer_name>",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contact_name\" : \"\",\r\n    \"address\" : \"\",\r\n    \"city\" : \"\",\r\n    \"postal_code\" : \"\",\r\n    \"country\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/customer/Alfreds Futterkiste",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"customer",
+								"Alfreds Futterkiste"
+							]
+						},
+						"description": "This will return information about customer with customer name\r\nNote: Body only makes the api run, it doesn't affect the result "
+					},
+					"response": []
+				},
+				{
+					"name": "/customer/<customer_name>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contact_name\" : \"Ana Trujillo\",\r\n    \"address\" : \"Avda. de la Constitución 2222\",\r\n    \"city\" : \"México D.F.\",\r\n    \"postal_code\" : \"05021\",\r\n    \"country\": \"Mexico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/customer/Alfreds Futterkiste",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"customer",
+								"Alfreds Futterkiste"
+							]
+						},
+						"description": "This will update the customer with customer name if the customer already exists in customer table or add a new customer with customer name if the customer does not exist in the customer table"
+					},
+					"response": []
+				},
+				{
+					"name": "/customer/<customer_name>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contact_name\" : \"\",\r\n    \"address\" : \"\",\r\n    \"city\" : \"\",\r\n    \"postal_code\" : \"\",\r\n    \"country\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/customer/Ana Trujillo Emparedados y helados",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"customer",
+								"Ana Trujillo Emparedados y helados"
+							]
+						},
+						"description": "This will delete customer with customer name and return message either customer name exists or not"
+					},
+					"response": []
+				},
+				{
+					"name": "/customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/customers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"customers"
+							]
+						},
+						"description": "Return all customer in customer table"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee API",
+			"item": [
+				{
+					"name": "/employee/<last_name>",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Nancy\",\r\n    \"birth_date\" : \"1968-12-08\",\r\n    \"photo\" : \"EmpID1.pic\",\r\n    \"notes\" : \"Education includes a BA in psychology from Colorado State University. She also completed (The Art of the Cold Call). Nancy is a member of 'Toastmasters International'.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/employee/Fullca",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"employee",
+								"Fullca"
+							]
+						},
+						"description": "This will add a employee with last name and return employee json"
+					},
+					"response": []
+				},
+				{
+					"name": "/employee/<last_name>",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"\",\r\n    \"birth_date\" : \"\",\r\n    \"photo\" : \"\",\r\n    \"notes\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/employee/Davolio",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"employee",
+								"Davolio"
+							]
+						},
+						"description": "This will return employee information with last name."
+					},
+					"response": []
+				},
+				{
+					"name": "/employee/<last_name>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"Janet\",\r\n    \"birth_date\" : \"1963-08-30\",\r\n    \"photo\" : \"EmpID3.pic\",\r\n    \"notes\" : \"Janet has a BS degree in chemistry from Boston College). She has also completed a certificate program in food retailing management. Janet was hired as a sales associate and was promoted to sales representative.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/employee/Leverling",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"employee",
+								"Leverling"
+							]
+						},
+						"description": "This will update the employee with last name if the employee already exists in employee table or add a new employee with last name if the employee does not exist in the employee table"
+					},
+					"response": []
+				},
+				{
+					"name": "/employee/<last_name>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"\",\r\n    \"birth_date\" : \"\",\r\n    \"photo\" : \"\",\r\n    \"notes\" : \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/employee/Fullcascas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"employee",
+								"Fullcascas"
+							]
+						},
+						"description": "This will delete employee with last name and return message either last name exists or not"
+					},
+					"response": []
+				},
+				{
+					"name": "/employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"employees"
+							]
+						},
+						"description": "Return all employees in employee table"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shipper API",
+			"item": [
+				{
+					"name": "/shippers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/shippers",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"shippers"
+							]
+						},
+						"description": "This will return all shippers in shipper table"
+					},
+					"response": []
+				},
+				{
+					"name": "/shipper/<shipper_name>",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/shipper/United Package",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"shipper",
+								"United Package"
+							]
+						},
+						"description": "This will return the information of shipper with shipper name"
+					},
+					"response": []
+				},
+				{
+					"name": "/shipper/<shipper_name>",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\" : \"(503) 555-9831\"\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/shipper/United Package",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"shipper",
+								"United Package"
+							]
+						},
+						"description": "This will add a new shipper with shipper name into shipper table"
+					},
+					"response": []
+				},
+				{
+					"name": "/shipper/<shipper_name>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\" : \"(503) 555-9831\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/shipper/United Package",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"shipper",
+								"United Package"
+							]
+						},
+						"description": "This will update the shipper if the shipper name exist or add a new shipper if the shipper name doesn't exist"
+					},
+					"response": []
+				},
+				{
+					"name": "/shipper/<shipper_name>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/shipper/United Package",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"shipper",
+								"United Package"
+							]
+						},
+						"description": "This will delete the shipper with shipper name if exist"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order API",
+			"item": [
+				{
+					"name": "/orders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"orders"
+							]
+						},
+						"description": "This will return all orders in order table"
+					},
+					"response": []
+				},
+				{
+					"name": "/order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : 1,\r\n    \"customer_id\" : 0,\r\n    \"employee_id\" : 0,\r\n    \"order_date\" : \"1996-07-04\",\r\n    \"shipper_id\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order"
+							]
+						},
+						"description": "This will return the information of order with order ID in the body request"
+					},
+					"response": []
+				},
+				{
+					"name": "/order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : 1,\r\n    \"customer_id\" : 2,\r\n    \"employee_id\" : 4,\r\n    \"order_date\" : \"1996-07-04\",\r\n    \"shipper_id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order"
+							]
+						},
+						"description": "This will add a new order with customer id, employee id and shipper id if all exist."
+					},
+					"response": []
+				},
+				{
+					"name": "/order",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : 1,\r\n    \"customer_id\" : 2,\r\n    \"employee_id\" : 4,\r\n    \"order_date\" : \"1996-07-04\",\r\n    \"shipper_id\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order"
+							]
+						},
+						"description": "This will add a new order with customer id, employee id and shipper id if all exist if order id doesn't exist or update the order if order id exists\r\n\r\n"
+					},
+					"response": []
+				},
+				{
+					"name": "/order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : 1,\r\n    \"customer_id\" : 0,\r\n    \"employee_id\" : 0,\r\n    \"order_date\" : \"1996-07-04\",\r\n    \"shipper_id\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"order"
+							]
+						},
+						"description": "This will delete the order if order id exist in order table"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

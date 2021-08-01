@@ -8,7 +8,7 @@ class EmployeeModel(db.Model):
 	employee_id = db.Column(db.Integer, primary_key=True)
 	last_name = db.Column(db.String(40), nullable=False)
 	first_name = db.Column(db.String(40), nullable=False)
-	birth_date = db.Column(db.DateTime, default=datetime.utcnow)
+	birth_date = db.Column(db.Date, default=datetime.utcnow)
 	photo = db.Column(db.String(20), default='abc')
 	notes = db.Column(db.String(100), default='abc')
 
