@@ -64,7 +64,7 @@ def get_all_client_id(file):
 
 def act_client():
     print('Log in (1) / Sign up (2)')
-
+    
     while True:
         file = 'Assignment8_API/ex03/out/waiting_clients.csv'
         if os.path.exists(file):        # check if the file is exist

@@ -19,9 +19,10 @@ def save_output(data):
 if __name__ == '__main__':
     url = 'https://movie-quote-api.herokuapp.com/v1/quote/'
     all_data = []
-    for i in range(10):
+    for i in range(100):
         data = get_quote(url)
-        all_data.append(data)
+        if data not in all_data:
+            all_data.append(data)
     save_output(all_data)
 
 

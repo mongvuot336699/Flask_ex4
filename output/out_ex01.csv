@@ -1,11 +1,52 @@
 ,quote,role,show,contain_adult_lang
-0,There are no girls with good personalities.,Patrick Bateman,American Psycho,False
-1,"I contemplate the moment in the garden, the idea of allowing your own crucifixion.",Rust Cohle,True Detective,False
-2,Can You Shoot Him First So I Can Watch?,Oraetta Mayflower,Fargo S04,False
-3,"We are Building Something, Here, Detective, We are Building It From Scratch. All The Pieces Matter.",Lester Freamon,The Wire,False
-4,Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.,Michael Scott,The Office,False
-5,"There aint nothing you fear more than a bad headline, now, is there? You would rather live in shit than let the world see you work a shovel.",Cedric Daniels,The Wire,True
-6,"Tricky thing, combining work and marriage, but a blessing when it works.",Jacob Snell,Ozark,False
-7,A man who only talks business is a failure in all aspects of life.,Camino Del Rio,Ozark,False
-8,"Trevor Reznik: Stevie, I haven't slept in a yearStevie: Jesus Christ!Trevor Reznik: I tried him too.",Ivan-Trevor Reznik,The Machinist,False
-9,Lifes barely long enough to get good at one thing. So be careful what you get good at.,Rust Cohle,True Detective,False
+0,"If the Gods are fucking you, you find a way to fuck them back.",Ervin Burrell,The Wire,True
+1,God wasn’t protecting you. The kid had shitty aim.,Grace Young,Ozark,True
+2,A Lie's Not A Lie If You Believe It's True.,Emmit Stussy,Fargo S03,False
+3,"I Got This Theory, In Private, That I Don't Actually Exist.",Gloria Burgle,Fargo S03,False
+4,"Lambs go to slaughter. A man, he learns when to walk away.",The Greek,The Wire,False
+5,"We are Building Something, Here, Detective, We are Building It From Scratch. All The Pieces Matter.",Lester Freamon,The Wire,False
+6,"Remember, Richest Guy In The Room Is Always The Boss",Nikki Swango,Fargo S03,False
+7,I don't wanna go to no dance unless I can rub some tit.,Lester Freamon,The Wire,True
+8,There is no such thing as forgiveness. People just have short memories.,Rust Cohle,True Detective,False
+9,We can’t control what happens to us only how it affects us and the choices we make.,Chloe Decker,Lucifer,False
+10,Sometimes we need to lose something to understand its value.,Linda Martin,Lucifer,False
+11,"I mean, God works in mysterious ways. So you just got to believe that when He crushes your nuts, He does it for a reason.",Ella Lopez,Lucifer,True
+12,"There aint nothing you fear more than a bad headline, now, is there? You would rather live in shit than let the world see you work a shovel.",Cedric Daniels,The Wire,True
+13,"So, with some proper funding, we should be able to get a functioning beta in time for CES. And if you do not fund us, you are a fucking slut. Ah. What's that smell? Is that a fart? You Are you a farter? Now, can I have a pastry? Or are you guys gonna eat em all? 'Cause you are gonna get fat.",Richard Hendricks,Sillicon Valley,True
+14,have you lost your mind cause i'll help you find it,Stanley,The Office,False
+15,Its Thursday and its past noon. Thursday is one of my days off. On my days off I start drinking at noon. You dont get to interrupt that.,Rust Cohle,True Detective,False
+16,Can You Shoot Him First So I Can Watch?,Oraetta Mayflower,Fargo S04,False
+17,"You know what the most dangerous thing in America is, right? Nigga with a library card.",Brother Mouzone,The Wire,False
+18,The bite of the apple was not the original sin. Lucifer’s fall was.,Mason Young,Ozark,False
+19,I’m just a happy camper! Rockin' and a rollin’!,Patrick Bateman,American Psycho,False
+20,Ain't Nothing Organized About Our Crime 'Cause Our Crime Is Freedom.,Zelmare,Fargo S04,False
+21,Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.,Michael Scott,The Office,False
+22,And you could just let go. Finally know that you didnt have to hold on so tight.,Rust Cohle,True Detective,False
+23,"If I was kidding, I would’ve said you’re witty and handsome.",Ruth Langmore,Ozark,False
+24,"Its weird. They always travel in groups of five. These programmers, there is always a tall skinny white guy, a short skinny Asian guy, fat guy with a ponytail, some guy with crazy facial hair and then an East Indian guy. Its like they trade guys until they all have the right group.",Gavin Belson,Sillicon Valley,False
+25,"When you think you’re gonna die yesterday, today is sweet.",Buddy Dyker,Ozark,False
+26,Death created time to grow the things that it would kill.,Rust Cohle,True Detective,False
+27,You Know Why America Loves A Crime Story? Because America Is A Crime Story.,Josta Fadda,Fargo S04,False
+28,"You Want To Die Like A Man, You Got To Live Like A Man.",Deafy Wickware,Fargo S04,False
+29,"People out here, its like they dont even know the outside world exists. Might as well be living on the fucking moon.",Rust Cohle,True Detective,True
+30,Now you make sure you tell old Marlo I burned the money. 'Cause it ain't about that paper. It's about me hurtin' his people and messin' with his world. Tell that boy he ain't man enough to come down to the street with Omar. You tell him that!,Omar Little,The Wire,False
+31,"Trevor Reznik: Stevie, I haven't slept in a yearStevie: Jesus Christ!Trevor Reznik: I tried him too.",Ivan-Trevor Reznik,The Machinist,False
+32,What is the worst thing on a woman? A drunken Irishman.,Rhonda Pearlman,The Wire,True
+33,I'm gonna make him an offer he can't refuse.,Don Vito Corleone,God Father,False
+34,Always better to be the person holding the gun than the one running from the gunman.,Wendy Byrde,Ozark,False
+35,A man who only talks business is a failure in all aspects of life.,Camino Del Rio,Ozark,False
+36,you can ride a lot of dick before dusk,Zeke Banks,Spiral From The Book Of Saw,True
+37,"Wanna know what kills more police than bullets and liquor? Boredom. They just can’t handle that shit. You keep it boring, String. You keep it dead fucking boring.",Proposition Joe,The Wire,True
+38,Lifes barely long enough to get good at one thing. So be careful what you get good at.,Rust Cohle,True Detective,False
+39,"Tricky thing, combining work and marriage, but a blessing when it works.",Jacob Snell,Ozark,False
+40,"[About Hell] “You send yourselves. Driven down by your own guilt. Forcing yourselves to relive your sins over and over. And the best part…the doors aren’t locked. You could leave anytime. It says something that no one ever does, doesn’t it?”",Lucifer,Lucifer,False
+41,I dont sleep. I just dream.,Rust Cohle,True Detective,False
+42,"Well, You Know What They Say: ‘Stupid Criminal Make Stupid Cops. Im Proud To Be Chasing This Guy.",Jimmy Mcnulty,The Wire,False
+43,"Women are born with this little hole between their legs, which every man on earth just wants to stick something into. And they are weaker than men, so they learn strategies. They deploy their minds and their sex, and they intuitively learn to humiliate.",Edmund Kemper,Mindhunter,True
+44,"Keep your friends close, but your enemies closer.",Michael Corleone,God Father,False
+45,"Man, money ain't got no owners. Only spenders.",Omar Little,The Wire,False
+46,"No one expects you to change overnight. It’s hard to be one of the good guys. Look, I screw up, too. I’ve made plenty of mistakes believe me. But I don’t quit… and I know that counts for something. At least you’re trying, right?",Dan Espinoza,Lucifer,False
+47,"Just like you man, I Got The Shotgun. You Got The Briefcase. It’s All In The Game, Though, Right?",Omar Little,The Wire,False
+48,Its easier to ask for forgiveness than permission.,Holden Ford,Mindhunter,False
+49,Too much talk and words lose their meaning.,Jacob Snell,Ozark,False
+50,"I think if you stay, something bad will happen. I think I might hurt you.",Patrick Bateman,American Psycho,False

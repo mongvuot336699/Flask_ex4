@@ -40,7 +40,8 @@ if __name__ == '__main__':
     while True:
         client = act_client()
         print(client)
- 
+        
+        append_sim()
         assert os.path.exists('Assignment8_API/ex03/out/sim.csv'), 'No sim file'
 
         df = pd.read_csv('Assignment8_API/ex03/out/sim.csv')
