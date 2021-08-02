@@ -43,4 +43,3 @@ class OrderModel(db.Model):
 		self.employee_id = employee_id
 		self.order_date = order_date
 		self.shipper_id = shipper_id
-		self.customer = customer 

@@ -14,19 +14,19 @@ class Order(Resource):
 						required=False)
 	parser.add_argument('customer_id',
 						type=int,
-						required=True,
+						required=False,
 						help="This field cannot be empty")
 	parser.add_argument('employee_id',
 						type=int,
-						required=True,
+						required=False,
 						help="This field cannot be empty")
 	parser.add_argument('order_date',
 						type=lambda s: datetime.strptime(s, '%Y-%m-%d').date(),
-						required=True,
+						required=False,
 						help="This field cannot be empty")
 	parser.add_argument('shipper_id',
 						type=int,
-						required=True,
+						required=False,
 						help="This field cannot be empty")
 
 	def get(self):
@@ -75,7 +75,7 @@ class Order(Resource):
 	
 	def put(self):
 		data = Order.parser.parse_args()
-
+		del data['order_id']
 		if Order.parser.parse_args()['order_id']:
 			id = Order.parser.parse_args()['order_id']
 			customer = CustomerModel.find_by_customer_id(data['customer_id'])
